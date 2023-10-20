@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattress Renew</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ! -->
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand mainnav">
+        <div class="container nav-inner d-flex justify-content-center ">
+
+            <div class="text-center center-nav main-links">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" height="85px" width="auto">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-blue" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item login-btn-cover login-cover list-unstyled">
+                        <a class="nav-link m-0 login-btn" href="login.html"><span>LOGIN</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right d-flex align-items-center flex-column">
+                <!-- CART -->
+                <div class="mycart">
+                    <ul class="navbar-nav cart-nav">
+                        <li class="nav-item cart cart-cover">
+                            <a class="nav-link text-blue cart-link active" href="cart.html">
+                                <img src="img/cart-icon.png" alt="" class="cart-icon">
+                                <span>CART</span> <span class="num">0.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- CART SECTION -->
+    <div class="container-fluid cart-section bg-lblue">
+        <div class="container">
+            <main class="form-bg bg-light">
+                <div class="py-5 text-center">
+                    <h2>CHECKOUT</h2>
+                    <p class="lead">Thank you for shopping with us!</p>
+                </div>
+
+                <div class="row g-5">
+
+                    <!-- LEFT-SIDE -->
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Billing address</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email </label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter your shipping address.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Address 2 <span
+                                            class="text-muted">(Optional)</span></label>
+                                    <input type="text" class="form-control" id="address2"
+                                        placeholder="Apartment or suite">
+                                </div>
+
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="country" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Please enter valid country name.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Please enter valid state.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="same-address">
+                                <label class="form-check-label" for="same-address">Shipping address is the same as my
+                                    billing address</label>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h4 class="mb-3">Payment</h4>
+
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                        checked required>
+                                    <label class="form-check-label" for="credit">Credit card</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="debit">Debit card</label>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Name on card</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                        Name on card is required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Credit card number</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Credit card number is required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="cc-expiration" class="form-label">Expiration</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Expiration date required
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Security code required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+
+                        </form>
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="col-md-5 col-lg-4">
+
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Your cart</span>
+                        </h4>
+
+                        <div class="box-title d-flex justify-content-between">
+                            <h6 class="m-0 d-inline-block myqtytitle">Quantity:</h6>
+
+                            <div class="qty text-white d-inline-block">
+                                <button class="btn btn-dark fa-solid fa-minus"></button>
+                                <p class="d-inline-block m-0 text-dark">x <span class="qty">2</span></p>
+                                <button class="btn btn-dark fa-solid fa-plus"></button>
+                            </div>
+                        </div>
+
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Product name</h6>
+                                    <small class="text-muted">Brief description</small>
+                                </div>
+                                <span class="text-muted">$12</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total (USD)</span>
+                                <strong>$20</strong>
+                            </li>
+                        </ul>
+                        <button class="w-100 btn btn-primary btn-lg mt-3 btn-checkout" type="submit">Continue to
+                            checkout</button>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ! -->
+    <!-- TEXT SECTION -->
+    <div class="container-fluid text-section bg-lblue bg-gap2">
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ! -->
+    <!-- LAST SECTION -->
+    <div class="container-fluid last-section">
+        <div class="container text-center d-flex align-items-center flex-column">
+            <!-- upper -->
+            <div class="upper bg-primary">
+                <div class="logo"><img src="img/logo-footer.png" alt=""></div>
+                <div class="link-to-nav">
+                    <ul class="navbar-nav flex-row justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divider-line"></div>
+                <div class="text">
+                    <p class="text-uppercase text-white">subscribe to our newsletter</p>
+                </div>
+                <div class="input">
+                    <form action="">
+                        <input type="email" name="" id="" class="form-control d-inline-block email"
+                            placeholder="ENTER YOUR EMAIL">
+                        <button class="submitbtn border-0"></button>
+                    </form>
+                </div>
+                <div class="bottom-links">
+                    <ul class="navbar-nav flex-row justify-content-center">
+                        <li class="">
+                            <a class="text-white" href="#">TERMS AND CONDITIONS</a>
+                        </li>
+                        <li class="">
+                            <a class="text-white" href="#">30 DAY MONEY BACK GUARANTEE</a>
+                        </li>
+                        <li class="">
+                            <a class="text-white" href="#">RETURN POLICY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <div class="footer">
+                <p class="text-uppercase text-blue">
+                    <span>copyrights 2023. mattress renew.</span> <span>All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/aff30b3f8a.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
